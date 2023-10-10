@@ -17,7 +17,7 @@ import utilities.FullStackException;
 public class WebBrowser {
 
     private String currentPage;
-    private ArrayList history;
+    private ArrayList<String> history;
     private MyStack prev;
     private MyStack next;
 
@@ -85,8 +85,6 @@ public class WebBrowser {
      */
     public boolean findLink(String link) {
         // TODO: complete implementation
-    }
-
     }
 
 }
