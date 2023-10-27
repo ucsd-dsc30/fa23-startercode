@@ -20,10 +20,6 @@ public class MyQueue<T> implements MyQueueInterface<T> {
         // TODO
     }
 
-    public MyQueue(int capacity) {
-        // TODO
-    }
-
     public boolean isEmpty() {
         // TODO
         return false;
