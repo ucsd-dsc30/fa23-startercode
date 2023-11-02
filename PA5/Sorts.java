@@ -185,4 +185,25 @@ public class Sorts {
 
         return output;
     }
+
+    ////////////////////////
+    ///// EXTRA CREDIT /////
+    ////////////////////////
+    
+    public static boolean inspectInsertion(int[] arr, int n) {
+        // TODO
+        return false;
+    }
+
+    public static boolean inspectSelection(int[] arr, int n) {
+        // TODO
+        return false;
+    }
+
+    public static boolean inspectMerge(int[] arr, int n) {
+        // TODO
+        return false;
+    }
+    
+}
 }
