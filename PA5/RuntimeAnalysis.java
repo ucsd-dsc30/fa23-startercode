@@ -43,9 +43,7 @@ public class RuntimeAnalysis {
             int size = SMALL_INPUT_SIZES[0];
             ArrayList<Integer> arr = generateArrayList(size);
             measureExecutionTime(() -> Sorts.insertionSort(arr,  0, arr.size() - 1));
-            measureExecutionTime(() -> Sorts.mergeSort(arr,  0, arr.size() - 1));
             measureExecutionTime(() -> Sorts.quickSort(arr,  0, arr.size() - 1));
-            measureExecutionTime(() -> Sorts.modifiedQuickSort(arr,  0, arr.size() - 1, 8));
             measureExecutionTime(() -> Sorts.bucketSort(arr));
             measureExecutionTime(() -> Sorts.countSort(arr));
         }
@@ -57,9 +55,7 @@ public class RuntimeAnalysis {
             ArrayList<Integer> smallList = generateArrayList(SMALL_INPUT_SIZES[i]);
 
             timings.add(measureAndPrintSortingTime("Insertion Sort", smallList));
-            timings.add(measureAndPrintSortingTime("Merge Sort", largeList));
             timings.add(measureAndPrintSortingTime("Quick Sort", largeList));
-            timings.add(measureAndPrintSortingTime("Modified Quick Sort", largeList));
             timings.add(measureAndPrintSortingTime("Bucket Sort", largeList));
             timings.add(measureAndPrintSortingTime("Count Sort", largeList));
         }
@@ -90,9 +86,7 @@ public class RuntimeAnalysis {
     private static String measureAndPrintSortingTime(String sortName, ArrayList<Integer> list) {
         long sortingTime = switch (sortName) {
             case "Insertion Sort" -> measureExecutionTime(() -> Sorts.insertionSort(list, 0, list.size() - 1));
-            case "Merge Sort" -> measureExecutionTime(() -> Sorts.mergeSort(list, 0, list.size() - 1));
             case "Quick Sort" -> measureExecutionTime(() -> Sorts.quickSort(list, 0, list.size() - 1));
-            case "Modified Quick Sort" -> measureExecutionTime(() -> Sorts.modifiedQuickSort(list, 0, list.size() - 1, 8));
             case "Bucket Sort" -> measureExecutionTime(() -> Sorts.bucketSort(list));
             case "Count Sort" -> measureExecutionTime(() -> Sorts.countSort(list));
             default -> 0; // Default case, you can handle it as needed
