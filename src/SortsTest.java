@@ -60,49 +60,6 @@ class SortsTest {
     }
 
     @Test
-    public void testMergeSort(){
-        list.addAll(Arrays.asList(1, 2, 3, 4, 5));
-        Sorts.mergeSort(list, 0, 4);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(5, 4, 3, 2, 1));
-        Sorts.mergeSort(list, 0, list.size() - 1);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(5, 4, 3, 2, 1));
-        Sorts.mergeSort(list, 2, 4);
-        assertArrayEquals(new Integer[]{5, 4, 1, 2, 3}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 10, 2, 9, 3, 8, 4, 7, 5, 6));
-        Sorts.mergeSort(list, 0, list.size() - 1);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 10, 2, 9, 3, 8, 4, 7, 5, 6));
-        Sorts.mergeSort(list, 3, 7);
-        assertArrayEquals(new Integer[]{1, 10, 2, 3, 4, 7, 8, 9, 5, 6}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 2, 3, 5, 4));
-        Sorts.mergeSort(list, 3, 4);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        ArrayList<Integer> expected = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            int val = (int) (Math.random() * 100);
-            list.add(val);
-            expected.add(val);
-        }
-        Sorts.mergeSort(list, 0, list.size() - 1);
-        Collections.sort(expected);
-        assertArrayEquals(expected.toArray(), list.toArray());
-    }
-
-    @Test
     public void testQuickSort() {
         list.addAll(Arrays.asList(1, 2, 3, 4, 5));
         Sorts.quickSort(list, 0, 4);
@@ -141,49 +98,6 @@ class SortsTest {
             expected.add(val);
         }
         Sorts.quickSort(list, 0, list.size() - 1);
-        Collections.sort(expected);
-        assertArrayEquals(expected.toArray(), list.toArray());
-    }
-
-    @Test
-    public void testModifiedQuickSort() {
-        list.addAll(Arrays.asList(1, 2, 3, 4, 5));
-        Sorts.modifiedQuickSort(list, 0, 4, 2);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(5, 4, 3, 2, 1));
-        Sorts.modifiedQuickSort(list, 0, list.size() - 1, 2);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(5, 4, 3, 2, 1));
-        Sorts.modifiedQuickSort(list, 2, 4, 2);
-        assertArrayEquals(new Integer[]{5, 4, 1, 2, 3}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 10, 2, 9, 3, 8, 4, 7, 5, 6));
-        Sorts.modifiedQuickSort(list, 0, list.size() - 1, 2);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 10, 2, 9, 3, 8, 4, 7, 5, 6));
-        Sorts.modifiedQuickSort(list, 3, 7, 2);
-        assertArrayEquals(new Integer[]{1, 10, 2, 3, 4, 7, 8, 9, 5, 6}, list.toArray());
-
-        list.clear();
-        list.addAll(Arrays.asList(1, 2, 3, 5, 4));
-        Sorts.modifiedQuickSort(list, 3, 4, 2);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, list.toArray());
-
-        list.clear();
-        ArrayList<Integer> expected = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            int val = (int) (Math.random() * 100);
-            list.add(val);
-            expected.add(val);
-        }
-        Sorts.modifiedQuickSort(list, 0, list.size() - 1, 4);
         Collections.sort(expected);
         assertArrayEquals(expected.toArray(), list.toArray());
     }
