@@ -3,6 +3,7 @@
  * PID:  TODO
  */
 
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
@@ -13,6 +14,7 @@ import java.util.NoSuchElementException;
  *
  * @param <T> the type of elements held in this collection
  */
+
 public class dHeap<T extends Comparable<? super T>> implements HeapInterface<T> {
 
     private T[] heap;   // backing array
@@ -25,7 +27,7 @@ public class dHeap<T extends Comparable<? super T>> implements HeapInterface<T> 
      */
     @SuppressWarnings("unchecked")
     public dHeap() {
-        /* TODO */
+        // TODO
     }
 
     /**
@@ -35,7 +37,7 @@ public class dHeap<T extends Comparable<? super T>> implements HeapInterface<T> 
      */
     @SuppressWarnings("unchecked")
     public dHeap(int heapSize) {
-        /* TODO */
+        // TODO
     }
 
     /**
@@ -49,53 +51,54 @@ public class dHeap<T extends Comparable<? super T>> implements HeapInterface<T> 
      */
     @SuppressWarnings("unchecked")
     public dHeap(int d, int heapSize, boolean isMaxHeap) throws IllegalArgumentException {
-        /* TODO */
+        // TODO
     }
 
     @Override
     public int size() {
-        /* TODO */
+        // TODO
         return 0;
     }
 
     @Override
     public T remove() throws NoSuchElementException {
-        /* TODO */
+        // TODO
         return null;
     }
 
     @Override
     public void add(T item) throws NullPointerException {
-        /* TODO */
+        // TODO
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public void clear() {
-        /* TODO */
+        // TODO
     }
 
     @Override
     public T element() throws NoSuchElementException {
-        /* TODO */
-        return  null;
+        // TODO
+        return null;
     }
 
-    private void trickleDown(int index) {
-        /* TODO */
+    private int parent(int index) {
+        // TODO
+        return 0;
     }
 
     private void bubbleUp(int index) {
-        /* TODO */
+        // TODO
+    }
+
+    private void trickleDown(int index) {
+        // TODO
     }
 
     @SuppressWarnings("unchecked")
     private void resize() {
-        /* TODO */
+        // TODO
     }
 
-    private int parent(int index) {
-        /* TODO */
-        return -1;
-    }
 }
