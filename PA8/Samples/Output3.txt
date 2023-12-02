@@ -1,0 +1,15 @@
+HashTable:
+beicycle: bicycle
+pwillow: pillow, willow
+masterchef: master chef
+beding: being, beading, bedding, bending
+sprice: price, splice, spice, sprite, spruce
+treestop: tree stop, trees top, treetop
+
+BloomFilter:
+beicycle: bicycle
+pwillow: p willow, pillow, willow
+masterchef: master chef
+beding: being, beading, bedding, bending
+sprice: price, splice, s price, spice, sprite, spruce
+treestop: tree stop, trees top, treetop

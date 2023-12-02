@@ -1,0 +1,18 @@
+HashTable:
+appoe: apple
+banna: banana
+ornage: orange
+potato: ok
+cherrystrawberry: cherry strawberry
+poatta: not found
+pineapple: not found
+
+BloomFilter:
+huwuh: not found
+zzzzzzzz: not found
+pol: pop, poll, polo, pot, pool, pod, pox, pole, pal
+transcription: ok
+ludecrous: ludicrous
+utdoings: undoings
+tiannual: biannual
+institutes: ok
