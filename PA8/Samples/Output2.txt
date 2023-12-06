@@ -6,6 +6,7 @@ transcription: ok
 ludecrous: ludicrous
 utdoings: undoings
 tiannual: biannual
+institutes: ok
 
 BloomFilter:
 huwuh: not found
